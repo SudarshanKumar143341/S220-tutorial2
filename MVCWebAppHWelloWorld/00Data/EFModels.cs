@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.AspNetCore.SignalR;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
@@ -13,5 +14,7 @@ namespace MVCWebAppHWelloWorld._00Data
         [Required]
         public string Title { get; set; }
         public string Author { get; set; }
+
+        public string PublisherTitle { get; set; }
     }
 }
